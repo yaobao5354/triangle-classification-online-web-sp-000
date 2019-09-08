@@ -14,7 +14,7 @@ class Triangle
     elsif self.length1 != self.length2 && self.length1 != self.length3 && self.length2 != self.length3 
       :scalene
     else 
-      isosceles
+      :isosceles
     end 
   end 
 end
