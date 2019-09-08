@@ -12,7 +12,9 @@ class Triangle
     if self.length1 == 0 || self.length2 == 0 || self.length3 == 0
       begin 
         raise TriangleError
-      rescue 
+      rescue TriangleError => error 
+        error.message
+      end 
     elsif self.length1 == self.length2 && self.length1  == self.length3
       :equilateral
     elsif self.length1 != self.length2 && self.length1 != self.length3 && self.length2 != self.length3 
