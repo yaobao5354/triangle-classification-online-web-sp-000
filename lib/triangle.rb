@@ -12,7 +12,9 @@ class Triangle
     if self.length1 == self.length2 && self.length1  == self.length3
       :equilateral
     elsif self.length1 != self.length2 && self.length1 != self.length3 && self.length2 != self.length3 
-      :sca
+      :scalene
+    else 
+      isosceles
     end 
   end 
 end
