@@ -1,3 +1,4 @@
+require 'pry'
 class Triangle
   
   attr_accessor :length1, :length2, :length3
@@ -10,6 +11,7 @@ class Triangle
   
   def kind 
     if self.length1 == 0 || self.length2 == 0 || self.length3 == 0
+      binding.pry
       begin 
         raise TriangleError
       rescue TriangleError => error 
