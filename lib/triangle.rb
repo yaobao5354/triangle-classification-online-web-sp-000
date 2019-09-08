@@ -11,12 +11,12 @@ class Triangle
   
   def kind 
     if self.length1 == 0 || self.length2 == 0 || self.length3 == 0
-      binding.pry
-      begin 
-   #     raise TriangleError
+    #  binding.pry
+   #   begin 
+        raise TriangleError
     #  rescue TriangleError => error 
-        puts error.message
-      end 
+     #   puts error.message
+      #end 
     elsif self.length1 == self.length2 && self.length1  == self.length3
       :equilateral
     elsif self.length1 != self.length2 && self.length1 != self.length3 && self.length2 != self.length3 
